@@ -1,8 +1,11 @@
 {
+  "homepage": "https://TheIllustrator1972.github.io/isometria",
   "name": "isometria",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -15,9 +18,10 @@
     "@mui/material": "^6.3.1",
     "@next/font": "^14.2.15",
     "gh-pages": "^6.3.0",
-    "next": "^15.1.4",
+    "next": "^15.1.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-is": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
