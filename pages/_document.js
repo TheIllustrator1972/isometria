@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
+import getImagePath from "./../src/app/utils";
 
 export const metadata = {
   title: "Isometria",
