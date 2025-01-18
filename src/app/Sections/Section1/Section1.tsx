@@ -32,7 +32,9 @@ const Section1 = () => {
         </Stack>
         <Stack sx={classes.rightSubsection}>
           <Image
-            src="/images/MainPreview.png"
+            src={`${
+              process.env.NODE_ENV === "production" ? "/isometria" : ""
+            }/images/MainPreview.png`}
             alt="Isometria Preview"
             layout="intrinsic"
             width={600} // Provide the width you know
