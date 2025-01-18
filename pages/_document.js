@@ -22,7 +22,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Privacy Policy of Isometria"
           />
-          <link rel="icon" href="/images/AppIcon.png" />
+          <link rel="icon" href={getImagePath("/images/AppIcon.png")} />
         </Head>
 
         <body>

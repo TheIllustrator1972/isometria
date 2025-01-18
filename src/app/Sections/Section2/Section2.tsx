@@ -3,6 +3,7 @@ import { sectionStyles } from "../style";
 import Image from "next/image";
 import Tools from "./Tools";
 import { getSection2Styles } from "./styles";
+import { getImagePath } from "@/app/utils";
 
 const Section2 = () => {
   const classes = getSection2Styles();
@@ -24,7 +25,7 @@ const Section2 = () => {
         <Stack sx={classes.contentContainer}>
           <Stack sx={classes.imagePreviewContainer}>
             <Image
-              src="/images/iPad_LandScape_Preview.png"
+              src={getImagePath("/images/iPad_LandScape_Preview.png")}
               alt="Isometria Preview"
               layout="intrinsic"
               width={600} // Provide the width you know

@@ -3,6 +3,7 @@ import { sectionStyles } from "../style";
 import AppIcon from "../../../images/AppIcon";
 import Image from "next/image";
 import { getSection1Styles } from "./styles";
+import { getImagePath } from "@/app/utils";
 
 const Section1 = () => {
   const classes = getSection1Styles();
@@ -32,9 +33,7 @@ const Section1 = () => {
         </Stack>
         <Stack sx={classes.rightSubsection}>
           <Image
-            src={`${
-              process.env.NODE_ENV === "production" ? "/isometria" : ""
-            }/images/MainPreview.png`}
+            src={getImagePath("/images/MainPreview.png")}
             alt="Isometria Preview"
             layout="intrinsic"
             width={600} // Provide the width you know

@@ -1,4 +1,5 @@
 import { Roboto } from "next/font/google";
+import { getImagePath } from "./utils";
 
 const roboto = Roboto({
   weight: "400",
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto.className}>
       <head>
-        <link rel="icon" href="/images/AppIcon.png" />
+        <link rel="icon" href={getImagePath("/images/AppIcon.png")} />
       </head>
       <body style={{ padding: "0px", margin: "0px", boxSizing: "border-box" }}>
         {children}

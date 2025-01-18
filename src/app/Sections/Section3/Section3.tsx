@@ -4,6 +4,7 @@ import { sectionStyles } from "../style";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Image from "next/image";
 import { getSection3Styles } from "./style";
+import { getImagePath } from "@/app/utils";
 
 const Section3 = () => {
   const classes = getSection3Styles();
@@ -29,7 +30,7 @@ const Section3 = () => {
           </Stack>
           <Stack sx={classes.imagePreview}>
             <Image
-              src="/images/MainPreview.png"
+              src={getImagePath("/images/MainPreview.png")}
               alt="Isometria Preview"
               layout="intrinsic"
               width={600}
