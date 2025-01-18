@@ -1,5 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import getImagePath from "./../src/app/utils";
+import { getImagePath } from "./../src/app/utils";
 
 export const metadata = {
   title: "Isometria",
@@ -23,7 +23,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Privacy Policy of Isometria"
           />
-          <link rel="icon" href={getImagePath("/images/AppIcon.png")} />
+          <link rel="icon" href={getImagePath("/images/AppIcon.png?v=1")} />
         </Head>
 
         <body>

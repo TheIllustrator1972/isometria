@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.className} ${lato.className}`}>
       <head>
-        <link rel="icon" href={getImagePath("/images/AppIcon.png")} />
+        <link rel="icon" href={getImagePath("/images/AppIcon.png?v=1")} />
       </head>
       <body style={{ padding: "0px", margin: "0px", boxSizing: "border-box" }}>
         {children}
