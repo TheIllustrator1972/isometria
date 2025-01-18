@@ -1,3 +1,10 @@
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export const metadata = {
   title: "Isometria", // Global title for the site
   description: "Isometric Grid Art", // Global description
@@ -12,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.className}>
       <head>
         <link rel="icon" href="/images/AppIcon.png" />
       </head>
