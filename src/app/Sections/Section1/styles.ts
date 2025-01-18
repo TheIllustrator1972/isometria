@@ -58,7 +58,7 @@ export const getSection1Styles = () => ({
     fontFamily: "Lato",
     fontSize: "40px",
     color: styles.color.white,
-    fontWeight: 500,
+    fontWeight: 400,
   },
   subHeading: {
     fontFamily: "Lato",
@@ -70,6 +70,6 @@ export const getSection1Styles = () => ({
     fontFamily: "Lato",
     fontSize: "18px",
     color: styles.color.white,
-    fontWeight: 500,
+    fontWeight: 400,
   },
 });

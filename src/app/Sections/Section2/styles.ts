@@ -6,7 +6,7 @@ export const getSection2Styles = () => ({
     fontFamily: "Lato",
     fontSize: "36px",
     color: styles.color.white,
-    fontWeight: 500,
+    fontWeight: 400,
     width: "60%",
     "@media (max-width: 1024px)": {
       width: "100%",

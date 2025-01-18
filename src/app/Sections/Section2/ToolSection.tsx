@@ -27,7 +27,7 @@ const classes = {
   title: {
     color: styles.color.white,
     fontFamily: "Lato",
-    fontWeight: 500,
+    fontWeight: 400,
     fontSize: "36px",
     "@media (max-width: 600px)": {
       fontSize: "24px",

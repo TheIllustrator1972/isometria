@@ -10,7 +10,7 @@ export const getSection3Styles = () => ({
     justifyContent: "space-between",
   },
   connect: {
-    fontWeight: 600,
+    fontWeight: 400,
     fontFamily: "Lato",
     fontSize: "40px",
     color: styles.color.white,

@@ -1,8 +1,13 @@
-import { Roboto } from "next/font/google";
+import { Roboto, Lato } from "next/font/google";
 import { getImagePath } from "./utils";
 
 const roboto = Roboto({
   weight: "400",
+  subsets: ["latin"],
+});
+
+const lato = Lato({
+  weight: ["300", "400"],
   subsets: ["latin"],
 });
 
@@ -20,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={`${roboto.className} ${lato.className}`}>
       <head>
         <link rel="icon" href={getImagePath("/images/AppIcon.png")} />
       </head>
