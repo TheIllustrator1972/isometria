@@ -1,12 +1,18 @@
+"use client";
+
 import { Box, Stack, Typography } from "@mui/material";
 import { sectionStyles } from "../style";
 import AppIcon from "../../../images/AppIcon";
+import DownloadOnTheAppStoreBanner from "../../../images/DownloadOnTheAppStoreBanner";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import Image from "next/image";
 import { getSection1Styles } from "./styles";
 import { getImagePath } from "@/app/utils";
 
 const Section1 = () => {
   const classes = getSection1Styles();
+  const isLargeScreen = useMediaQuery("(min-width:1024px");
   return (
     <Stack sx={sectionStyles.common.container}>
       <Stack sx={classes.container}>
@@ -27,9 +33,25 @@ const Section1 = () => {
             features like adjustable grid sizes, vibrant color picking, and
             intuitive drawing tools.
           </Typography>
-          <Typography sx={classes.comingSoom}>
-            Coming Soon on the App Store
-          </Typography>
+          <Stack sx={classes.downloadActionContainer}>
+            <a
+              href="https://apple.co/4h3qHz8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {isLargeScreen ? (
+                <Image
+                  src={getImagePath("/images/qr-code.png")}
+                  alt="QR Preview"
+                  layout="intrinsic"
+                  width={100} // Provide the width you know
+                  height={100}
+                />
+              ) : (
+                <DownloadOnTheAppStoreBanner />
+              )}
+            </a>
+          </Stack>
         </Stack>
         <Stack sx={classes.rightSubsection}>
           <Image

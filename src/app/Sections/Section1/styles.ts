@@ -72,4 +72,5 @@ export const getSection1Styles = () => ({
     color: styles.color.white,
     fontWeight: 400,
   },
+  downloadActionContainer: { display: "flex", flexDirection: "row", gap: 1 },
 });
