@@ -29,15 +29,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href={getImagePath("/images/AppIcon.png?v=1")} />
       </head>
-      <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-YC0QPEHR7E'
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-YC0QPEHR7E');
-      </script>
       <body style={{ padding: "0px", margin: "0px", boxSizing: "border-box" }}>
         {children}
       </body>
